@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@media screen and (max-width:950px){
+    body{
+        background-color: red;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        align-items: center;
+        justify-content: center;
+    }
+        
+}
+
+
+:root {
+    --main-bg-color:rgb(0, 41, 128);
+  }
+  
+
+*{
+    margin:0;
+    padding:0;
+}
+ header{ 
+    font-family: "Lato", sans-serif;
+     background-color: var(--main-bg-color); 
+     display:flex ; 
+}
+
+
+/*header*/
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+header .logo img{
+    width: 150px;
+    padding-right:40px;
+
+}
+
+
+header .logo img{
+    color:white;
+}
+header ul{
+    display: flex;
+    height: 58px;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: antiquewhite; */
+
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    padding:23px;
+    text-decoration: none;
+    color:white;
+}
+header ul li a:hover{
+    background-color: white;
+    color:black;
+    font-weight: bold;
+
+
+}
+header .search{
+    display: flex;
+    align-items: center;
+    
+}
+
+header .search input{
+    height: 23px;
+    align-items: center;
+    width:35vw;
+    margin: 0 10px 0 50px;
+    border-radius: 7px;
+    padding:0 12px;
+}
+button{
+    height: 26px;
+    padding: 3%  8%;
+    background-color: var(--main-bg-color);
+    color:white;
+    border:2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 350;
+    
+}
+.btn{
+    display: flex;
+    align-items: center;
+    
+
+}
+    
+   
+
+/*main*/
+.main{
+
+   min-height:calc(100vh - 58px - 60px);
+
+}
+.slider{
+    width: 900px;
+    height:200px;
+    overflow: hidden;
+    margin:0 auto;
+
+}
+
+
+.card{
+    margin:auto;
+    width:90vw;
+    /* background: var(--main-bg-color); */
+    font-family:"Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.carditem{
+    display: inline-flex;
+    flex-direction: column;
+    width: 160px;
+    align-items: center;
+    overflow: hidden;
+}
+.my-2{
+    margin:22px 0;
+
+}
+.card-p{
+    margin: 3px;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    background:var(--main-bg-color);
+    color:white;
+    font-family:"Lato", sans-serif;
+    height:60px;
+    align-items: center;
+    word-spacing: 7px;
+
+}

@@ -1,0 +1,258 @@
+*
+{
+    margin: 0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html,body
+{
+    height: 100%;
+}
+
+.section_one
+{
+    height:100%;
+    background-image: url(Developerlandingpage_img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    /* text-align: center; */
+
+}
+.section_one_maincontent{
+
+    line-height: 80px;
+    word-spacing: 20px;
+}
+#quote{
+    font-size: 20px;
+}
+
+
+
+#hi{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.section_one_maincontent{
+
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.section_two{
+    background-color: rgb(33, 32, 32);
+    color:white;
+    height: 150px;
+    text-transform: uppercase;
+    font-size:70px;
+    text-align: center;
+}
+
+#you{
+    font-size: 100px;
+    
+}
+
+.section_three
+{
+
+    height:500px;
+    display:flex;
+    padding:20px;
+    margin-top: 30px;
+    margin-bottom:5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-between;
+}
+
+.section_three .webdevelopment{
+
+    width:20%;
+    height:350px;
+    box-shadow: 0 0 3px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+
+}
+
+
+
+
+.section_three .webdevelopment:hover{
+
+    transform: scale(1.06);
+    box-shadow: 3px 3px 3px;
+    transition: 0.2 ease-in-out;
+    
+    
+}
+
+.section_three .Appdevelopment:hover{
+
+    transform: scale(1.06);
+    box-shadow: 3px 3px 3px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.section_three .ui_and_ux_design:hover{
+
+    transform: scale(1.06);
+    box-shadow: 3px 3px 3px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+
+
+
+
+
+.webdevelopment_matter{
+
+    padding:10px;
+
+}
+
+.webdevelopment_matter h1{
+    margin:5px;
+}
+.webdevelopment .webdevelopment_img img
+{
+    object-fit:cover;
+    /* object-position: center center; */
+    width:100%;
+    height:20%;
+
+}
+
+
+/*app development*/
+
+
+.section_three .Appdevelopment{
+
+    width:20%;
+    height:350px;
+    box-shadow: 0 0 3px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+
+
+}
+.Appdevelopment_matter{
+
+    padding:10px;
+
+}
+
+.Appdevelopment_matter h1
+{
+    margin:5px;
+}
+
+.Appdevelopment .Appdevelopment_img{
+
+   
+
+}
+
+
+.Appdevelopment .Appdevelopment_img img
+
+{
+    object-fit:cover;
+    /* object-position: center center; */
+    width:100%;
+    /* height:20%; */
+    
+}
+
+  
+
+
+.section_three .ui_and_ux_design{
+
+    width:20%;
+    height:350px;
+    box-shadow: 0 0 3px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+
+
+}
+.ui_and_ux_design_matter{
+
+    padding:10px;
+
+}
+
+.ui_and_ux_design_matter h1{
+    margin:5px;
+}
+.ui_and_ux_design .ui_and_ux_design_img img
+{
+    object-fit:cover;
+    /* object-position: center center; */
+    width:100%;
+    height:20%;
+
+}
+
+.section_4{
+
+    display: flex;
+}
+.contact_me{
+
+    flex:1;
+    background-color: rgb(3, 100, 3);
+    height: 300px;
+
+}
+.contact_me h2{
+    margin:10px 0 20px 0;
+}
+
+.About_me{
+
+    flex:1;
+    background-color:rgb(177, 43, 43);
+    height:300px;
+}
+
+.About_me h2{
+    margin:10px 0 20px 0;
+}
+  
+.section_5 .section_5_main{
+    
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    top:20%;
+    color:white;
+
+}
+.section_5{
+    background-color: rgb(33, 32, 32);
+    text-align: center;
+    height: 100px;
+}
+
+

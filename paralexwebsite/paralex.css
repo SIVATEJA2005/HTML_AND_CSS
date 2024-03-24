@@ -1,0 +1,105 @@
+*
+{
+    margin:0;
+    padding:0;
+    /* height:100%; */
+    font-family:"lato",sans-serif;
+}
+body,html
+{
+    height:100%;
+    
+}
+
+.img1
+{
+    background-image: url(paralexweb.jpeg);
+    height:100%;
+}
+.img1,.img2,.img3
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position:relative; */
+    background-position: center center;
+    /* position:relative; */
+    /* background-color: red; */
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    
+}
+
+.ptext
+{
+    font-family:"lato",sans-serif;
+    color:white;
+    /* background-color: black; */
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-size:50px;
+    margin: auto;
+}
+   
+
+    
+.ptext span
+{
+    background-color: rgb(50, 49, 49);
+    padding: 5px;
+}
+
+.section_one
+{
+    padding:50px;
+    background-color: rgb(241, 237, 237);
+}
+    
+.section_one h2
+{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 6px;
+}
+
+.img2
+{
+    background-image: url(paralexweb2.jpeg);
+    height:400px;
+}
+
+
+.section_two{
+
+    background-color: rgb(50, 49, 49);
+    color:white;
+    padding:50px;
+}
+
+.section_two h2{
+
+    text-align:center;
+}
+
+
+.img3
+{
+    background-image: url(paralexweb3.jpeg);
+    height:400px;
+}
+
+.section_three{
+
+    background-color: rgb(50, 49, 49);
+    color:white;
+    padding:50px;
+}
+
+.section_three h2
+    {
+        
+        text-align:center;
+    
+    }
+
+

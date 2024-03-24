@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+header{
+    display:flex;
+    justify-content: space-around;
+    background-color:rgb(106, 99, 99);
+    height: 12vh;
+    color:white;
+    align-items: center;
+    border-bottom: 3px solid orange;
+}
+.headernav{
+
+    list-style-type: none;
+    display:flex;
+    justify-content: space-around;
+    width: 300px;
+   
+
+}
+.headernav li a{
+    color:white;
+    text-decoration: none;
+    padding:3px 5px;
+}
+
+header .heading h1 #Acme{
+
+    color:orange;
+
+}
+.headernav li #Home{
+    color:orange;
+}
+ 
+.headernav li a:hover {
+    background-color: white;
+    color:black;
+    cursor: pointer;
+    border-radius: 8px;
+
+
+}
+
+/*section matter*/
+
+.showcase::before
+{
+    content:"";
+    background:url(acmeweb_webdesign.jpeg);
+    height:40vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+   
+    /* text-align: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -200px;
+}
+.showcase
+{
+    height:40vh;
+    display: flex;
+    align-items: center;
+    color:rgb(82, 45, 45);
+    
+
+}
+
+.sectionmatter
+{
+
+    text-align: center;
+    
+}
+.sectionmatter h1
+{
+     font-weight: bold;
+     font-size: 40px;
+
+}
+
+/*subscribe note*/
+.subscribe_note
+{
+    background-color: rgb(106, 99, 99);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.subscribe_note h3
+{
+    margin-left: 7rem;
+    color:white;
+    display:flex;
+    align-items: center;
+}
+.subscribe_note form
+{
+    display:flex;
+    align-items: center;
+    margin-left: 25rem;
+    margin-right: 7rem;
+}
+
+.subscribe_note form input[type="email"]
+{
+    padding:3px 6px;
+    width:250px;
+}
+.subscribe_note form button
+{
+    padding:3px 6px;
+    background-color: orange;
+    color:white;
+    border-radius: 4px;
+    margin-left: 3px;
+}
+
+/*main*/
+
+
+.main
+{
+    display:flex;
+}
+
+.ele
+    {
+    width:30%;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    margin-top:10px;
+    }
+.ele img
+{
+    width:30%;
+    height:20vh;
+    object-fit: contain;
+    align-self: center;
+}
+
+footer{
+    background-color: orange;
+    color:rgb(106, 99, 99);
+    display:flex;
+    justify-content: center;
+    height:8vh;
+    align-items: center;
+
+}
+footer .footer p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+

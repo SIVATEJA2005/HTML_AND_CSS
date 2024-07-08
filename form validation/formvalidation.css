@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    /* width: 450px; */
+
+}
+
+form div{
+    display: flex;
+    gap: 8px;
+    align-items:center;
+    justify-content: center;
+    /* align-self: flex-end; */
+    /* max-width: 550px; */
+    /* width: 90%; */
+
+}
+
+form div input{
+    padding: 10px;
+    width: 20vw;
+    /* margin-left: 30px; */
+    align-self: flex-end;
+    border: none;
+    /* border-bottom: 1px solid black; */
+    outline: none;
+}
+
+form div div {
+    border-bottom: 1px solid black;
+    /* width: 300px; */
+    display: flex;
+    /* align-self: flex-end; */
+
+}
+
+form div div span{
+    color: red;
+}
+
+
+form div textarea{
+    padding: 10px;
+    width: 20vw;
+    /* margin-left: 30px; */
+    align-self: flex-end;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+
+}
+
+#submiterror{
+    color: red;
+}
+
+
+.submitbtn{
+    /* display: block; */
+    /* justify-content: center; */
+    text-align: center;
+    width: 100%;
+   
+}
+
+.submitbtn button{
+    padding: 8px 10px ;
+    /* background-color: black;
+    color: white; */
+    border: none;
+
+}
+
+form div label{
+    width:100px;
+}
+
+.submitbtn button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+#btn-error{
+    color: red;
+}
+
+
+
+form div div span i{
+    color: green;
+
+
+}
+
+form div textarea i{
+    color: green;
+}

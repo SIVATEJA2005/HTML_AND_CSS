@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caluculator2</title>
+    <link rel="stylesheet" href="caluculator2.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <input type="text">
+
+        <div class="buttons">
+            <div class="btn_row1">
+
+                <button class="operator">AC</button>
+                <button class="operator">DE</button>
+                <button class="operator">.</button>
+                <button class="operator">/</button>
+
+
+            </div>
+            <div class="btn_row2">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">*</button>
+            </div>
+            <div class="btn_row3">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">-</button>
+            </div>
+            <div class="btn_row4">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator">+</button>
+            </div>
+
+            <div class="btn_row5">
+                <button>00</button>
+                <button>0</button>
+                <button  class="operator" id="isequal">=</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        let calu_keys=document.querySelectorAll(".container div button");
+        let input=document.querySelector("input")
+        // console.log(calu_keys[1].innerHTML)
+        // console.log(calu_keys);
+        calu_keys.forEach((ele)=>{
+            ele.addEventListener("click",(e)=>{
+
+                if(ele.innerHTML==="="){
+                    input.value=eval(input.value)
+                }
+                else if(ele.innerHTML==="DE"){
+                    input.value=input.value.slice(0,input.value.length-1)
+                    console.log("i am delete")
+
+                }
+
+                else if(ele.innerHTML=='AC'){
+                    input.value=""
+                    console.log(ele.innerHTML,input.value)
+                }
+            
+                else{
+            
+
+                input.value+=ele.innerHTML
+                }
+
+                
+              
+
+                
+                
+
+                
+
+            })
+        })
+
+
+    </script>
+
+
+    
+</body>
+</html>

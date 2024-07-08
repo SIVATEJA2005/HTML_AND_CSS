@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="image_gallery.css">
+</head>
+<body>
+
+    <i id="first_btn" class="fa-solid fa-circle-chevron-left fa-4x"></i>
+
+    <div class="gallery">
+
+      
+
+        <div class="imagecont">
+            <span><img src="image_gallery1.jpeg" alt=""></span>
+            <span><img src="image_gallery2.jpeg" alt=""></span>
+            <span><img src="image_gallery3.jpeg" alt=""></span>
+        </div>
+
+        
+        <div class="imagecont">
+            <span><img src="image_gallery4.jpeg" alt=""></span>
+            <span><img src="image_gallery5.jpeg" alt=""></span>
+            <span><img src="image_gallery6.jpeg" alt=""></span>
+        </div>
+
+
+
+
+
+    </div>
+
+    <i id="second_btn" class="fa-solid fa-circle-chevron-right fa-4x"></i>
+
+
+    
+</body>
+
+<script>
+
+    let scrollBar=document.querySelector(".gallery");
+
+    let btn_first=document.getElementById("first_btn");
+    
+    let second_btn=document.getElementById("second_btn");
+
+    scrollBar.addEventListener("wheel",(e)=>{
+        e.preventDefault();
+        scrollBar.scrollLeft+=e.deltaY;
+    })
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</html>

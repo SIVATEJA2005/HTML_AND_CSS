@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+
+body{
+    background:linear-gradient(135deg,rgb(2, 2, 68),rgb(74, 2, 14));
+    height: 100vh;
+
+}
+
+.container{
+    
+    background-color: white;
+    padding:30px;
+    margin:100px auto;
+    max-width: 440px;
+    border-radius: 30px;
+  
+}
+
+.add_taskbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_taskbar button{
+    padding:  20px  27px;
+    background-color: orangered;
+    color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: -45px;
+    border: none;
+
+
+}
+
+.container h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.add_taskbar input{
+
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(227, 222, 216);
+    margin-top: 20px;
+    width: 75%;
+    height: 36px;
+   
+
+
+
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding:15px 15px 15px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul{
+    margin-top: 10px;
+}
+
+ul li::before
+{
+    content: '';
+    position: absolute;
+
+    height: 18px;
+    width: 18px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    /* background-image: url(unchecked_image.gif); */
+    background-size:cover ;
+    left: 10px;
+
+}
+
+
+ul .tasks::before
+{
+    content: '';
+    position: absolute;
+
+    height: 18px;
+    width: 18px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+
+    background-image: url(to-do-list-completed.jpeg);
+    background-size:cover ;
+    left: 10px;
+
+}
+
+ul .tasks{
+    text-decoration: line-through;
+}
+
+
+
+ul li span{
+
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    right: 0px;
+    /* top:5px; */
+    height: 20px;
+    width: 20px;
+    text-align: center;
+
+
+
+}
+
+ul li span:hover{
+    background-color: rgb(180, 178, 178);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

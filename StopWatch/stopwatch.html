@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Stopwatch</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: rgb(209, 136, 209);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 40%;
+            height: 45vh;
+            /* background-color: aliceblue; */
+            border-radius: 8px;
+            background-image: url(backimage.jpeg);
+            background-color: rgb(65, 63, 63);
+            background-blend-mode: multiply;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: cover;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+        .controls{
+            align-self: flex-end;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+        
+        }
+
+        .controls .restart,.stop
+        {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: white;
+            background-color: none;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+
+        }
+
+        .play
+        {
+            width: 60px;
+            height: 60px;
+            background-color:orangered;
+            color: white;
+          
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        h1{
+            color: white;
+            font-size: 65px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="displaytime">00:00:00</h1>
+        
+        <div class="controls">
+           
+
+            <div class="stop" onclick="stop()" >
+                <i class="fa-solid fa-stop"></i>
+            </div>
+            <div class="play" onclick="playtimer()">
+                <i class="fa-solid fa-play fa-2x"></i>
+            </div>
+
+            <div class="restart" onclick="restart()">
+
+                <i class="fa-solid fa-rotate-left"></i>
+
+            </div>
+                
+ 
+
+
+        </div>
+
+
+    </div>
+    
+    <script>
+        var [seconds,minutes,hours]=[0,0,0]
+        console.log(seconds,hours,minutes)
+        let timer;
+
+        let displaytime=document.getElementById("displaytime")
+
+        function time(){
+            seconds++;
+            if(seconds==60){
+                minutes++;
+                seconds=0;
+            
+
+            }
+            if(minutes==60){
+                    hours++;
+                    minutes=0;
+
+            }
+
+            var h=hours<10?"0"+hours:hours;
+            var m=minutes<10?"0"+minutes:minutes;
+            var s=seconds<10?"0"+seconds:seconds;
+            displaytime.innerHTML=`${h}:${m}:${s}`
+
+            
+            // if(seconds<10){
+            // displaytime.innerHTML=`0${hours}:0${minutes}:0${seconds}`
+            // }
+            
+            // if(seconds>=10){
+            //      displaytime.innerHTML=`0${hours}:0${minutes}:${seconds}`
+
+            // }
+            // if(minutes>=10){
+            //       displaytime.innerHTML=`0${hours}:${minutes}:0${seconds}`
+
+            // }
+            // if(hours>=10){
+            //       displaytime.innerHTML=`${hours}:0${minutes}:0${seconds}`
+
+            // }
+
+
+
+        }
+    function playtimer(){
+
+        if(timer!=null){
+            clearInterval(timer)
+            console.log(timer)
+        }
+       timer= setInterval(time, 1000);
+       console.log(timer)
+    }
+
+    function stop(){
+        clearInterval(timer)
+   
+
+    }
+
+    function restart()
+    {
+        clearInterval(timer)
+        seconds=0;
+        hours=0;
+        minutes=0;
+        displaytime.innerHTML="00:00:00"
+    }
+
+    
+    </script>
+
+
+
+
+
+
+</body>
+</html>

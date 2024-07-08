@@ -1,0 +1,75 @@
+
+*{
+    /* margin: 0; */
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+
+html{
+    background-color: rgb(3, 3, 81);
+}
+
+body{
+    background-color:white;
+    max-width: 500px;
+    margin: 100px auto;
+    width: 80%;
+    border-radius:10px;
+    padding:20px;
+}
+.options{
+    padding-left: 10px;
+}
+
+
+.options button{
+    /* list-style: none; */
+    padding: 5px 25px 5px 5px;
+    margin-top: 5px;
+    border: 0.5px solid black;
+    padding-left: 10px;
+    width: 380px;
+    text-align: left;
+    background-color: white;
+
+
+}
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.next_button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    display: none;
+    margin-top: 20px;
+
+}
+
+
+.questions .options button:hover:not([disabled]){
+
+    background-color: black;
+    color:white;
+    
+}
+.options button:hover:disabled{
+    cursor: no-drop;
+}
+
+
+
+
+.green{
+    background-color: rgb(134, 206, 134);
+}
